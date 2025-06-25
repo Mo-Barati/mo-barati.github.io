@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mo Barati | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/profile.jpg" alt="Mo Barati" class="profile-img" />
+        <h1>Mo Barati</h1>
+        <p>Software Engineer | Java & Cloud Enthusiast</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Result-oriented Software Engineer with strong expertise in Java object-oriented programming and Python data structures,
+        with practical experience in database design using MySQL and MongoDB.
+        Skilled in cloud computing deployment using Docker and Kubernetes, systems analysis with UML, and implementation of
+        security protocols.
+        Proficient in web development (HTML/CSS/PHP), networking, and machine learning applications.
+        Highly motivated to foster group collaboration to achieve company goals.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>YahooChatApp</strong> – A simple Java-based chat application
+                (<a href="https://github.com/Mo-Barati/YahooChatApp" target="_blank">View on GitHub</a>)
+            </li>
+            <li>
+                <strong>ATM-Machine</strong> – Java project simulating ATM transactions
+                (<a href="https://github.com/Mo-Barati/ATM-Machine" target="_blank">View on GitHub</a>)
+            </li>
+        </ul>
+    </section>
+
+    <section id="cv">
+        <h2>CV</h2>
+        <a href="Mo Barati.pdf" download>Download My CV (PDF)</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><a href="mailto:mo.barati83@gmail.com">Email</a></li>
+            <li><a href="https://github.com/Mo-Barati" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/mo-barati-b606511a4/" target="_blank">LinkedIn</a></li>
+        </ul>
+        <p><a href="#" onclick="event.preventDefault(); toggleForm();">📬 Send Me a Message</a></p>
+
+        
+        <form id="contactForm" action="https://formspree.io/f/xzzgkawa" method="POST" style="display: none;">
+            <label for="name">Name</label><br />
+            <input type="text" id="name" name="name" required /><br />
+        
+            <label for="email">Email</label><br />
+            <input type="email" id="email" name="email" required /><br />
+        
+            <label for="message">Message</label><br />
+            <textarea id="message" name="message" rows="5" required></textarea><br />
+        
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script>
+        function toggleForm() {
+            const form = document.getElementById("contactForm");
+            form.style.display = form.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+
+</html>
